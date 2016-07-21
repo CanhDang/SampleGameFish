@@ -12,6 +12,12 @@
 		7E5CA82D1D3F391D00FB8540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CA82B1D3F391D00FB8540 /* Main.storyboard */; };
 		7E5CA82F1D3F391D00FB8540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CA82E1D3F391D00FB8540 /* Assets.xcassets */; };
 		7E5CA8321D3F391D00FB8540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CA8301D3F391D00FB8540 /* LaunchScreen.storyboard */; };
+		7E5CA8421D3F39F200FB8540 /* FishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CA8411D3F39F200FB8540 /* FishView.swift */; };
+		7E5CA8441D3F3A0600FB8540 /* HookerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CA8431D3F3A0600FB8540 /* HookerView.swift */; };
+		7E5CA8461D3F3A6000FB8540 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5CA8451D3F3A6000FB8540 /* GameManager.swift */; };
+		7E5CA8491D3F610100FB8540 /* fish1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CA8481D3F610100FB8540 /* fish1.png */; };
+		7E5CA84B1D3F775000FB8540 /* hook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CA84A1D3F775000FB8540 /* hook.png */; };
+		7E5CA84F1D3F8CD400FB8540 /* ocean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E5CA84E1D3F8CD400FB8540 /* ocean.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		7E5CA82E1D3F391D00FB8540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E5CA8311D3F391D00FB8540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5CA8331D3F391D00FB8540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E5CA8411D3F39F200FB8540 /* FishView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishView.swift; sourceTree = "<group>"; };
+		7E5CA8431D3F3A0600FB8540 /* HookerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HookerView.swift; sourceTree = "<group>"; };
+		7E5CA8451D3F3A6000FB8540 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		7E5CA8481D3F610100FB8540 /* fish1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fish1.png; sourceTree = "<group>"; };
+		7E5CA84A1D3F775000FB8540 /* hook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hook.png; sourceTree = "<group>"; };
+		7E5CA84E1D3F8CD400FB8540 /* ocean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ocean.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,28 @@
 		7E5CA8261D3F391D00FB8540 /* SampleGameFish */ = {
 			isa = PBXGroup;
 			children = (
+				7E5CA8471D3F60DD00FB8540 /* Images */,
 				7E5CA8271D3F391D00FB8540 /* AppDelegate.swift */,
 				7E5CA8291D3F391D00FB8540 /* ViewController.swift */,
 				7E5CA82B1D3F391D00FB8540 /* Main.storyboard */,
 				7E5CA82E1D3F391D00FB8540 /* Assets.xcassets */,
 				7E5CA8301D3F391D00FB8540 /* LaunchScreen.storyboard */,
 				7E5CA8331D3F391D00FB8540 /* Info.plist */,
+				7E5CA8411D3F39F200FB8540 /* FishView.swift */,
+				7E5CA8431D3F3A0600FB8540 /* HookerView.swift */,
+				7E5CA8451D3F3A6000FB8540 /* GameManager.swift */,
 			);
 			path = SampleGameFish;
+			sourceTree = "<group>";
+		};
+		7E5CA8471D3F60DD00FB8540 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7E5CA84E1D3F8CD400FB8540 /* ocean.jpg */,
+				7E5CA84A1D3F775000FB8540 /* hook.png */,
+				7E5CA8481D3F610100FB8540 /* fish1.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E5CA8321D3F391D00FB8540 /* LaunchScreen.storyboard in Resources */,
+				7E5CA84B1D3F775000FB8540 /* hook.png in Resources */,
 				7E5CA82F1D3F391D00FB8540 /* Assets.xcassets in Resources */,
 				7E5CA82D1D3F391D00FB8540 /* Main.storyboard in Resources */,
+				7E5CA84F1D3F8CD400FB8540 /* ocean.jpg in Resources */,
+				7E5CA8491D3F610100FB8540 /* fish1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +166,9 @@
 			files = (
 				7E5CA82A1D3F391D00FB8540 /* ViewController.swift in Sources */,
 				7E5CA8281D3F391D00FB8540 /* AppDelegate.swift in Sources */,
+				7E5CA8441D3F3A0600FB8540 /* HookerView.swift in Sources */,
+				7E5CA8421D3F39F200FB8540 /* FishView.swift in Sources */,
+				7E5CA8461D3F3A6000FB8540 /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
